@@ -1,0 +1,165 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+header {
+  /* using flex to create 2 column layout (.logo + .links) */
+  display: flex;
+  /* remember padding vs margins */
+  margin-top: 30px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+#vsh {
+  width: 120px;
+  height: 120px;
+}
+
+.logo {
+  flex: 50%;
+}
+
+.links {
+  flex: 50%;
+  text-align: right;
+}
+
+.links a {
+  text-decoration: none;
+  padding: 0 10px;
+  color: #b8b8b8;
+}
+
+.active {
+  color: #333 !important;
+}
+
+/* start of main */
+
+.main {
+  text-align: center;
+  max-width: 100%;
+  overflow: hidden;
+  margin-top: 30px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 30px;
+}
+
+.imgdl {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #8fc0f3;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* transition effect, not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.imgd {
+  transition: .2s;
+  transform: translateY(1em);
+  font-size: 30px;
+}
+
+.r1c1:hover .imgdl {
+  visibility: visible;
+  opacity: 1;
+}
+
+.r1c1:hover .imgd {
+  transform: translateY(0);
+}
+
+.r1c2:hover .imgdl {
+  visibility: visible;
+  opacity: 1;
+}
+
+.r1c2:hover .imgd {
+  transform: translateY(0);
+}
+
+.r1c3:hover .imgdl {
+  visibility: visible;
+  opacity: 1;
+}
+
+.r1c3:hover .imgd {
+  transform: translateY(0);
+}
+
+.r2c1:hover .imgdl {
+  visibility: visible;
+  opacity: 1;
+}
+
+.r2c1:hover .imgd {
+  transform: translateY(0);
+}
+
+.main .r1c1 {
+  width: 33.3%;
+  float: left;
+  height: 300px;
+  background: #baddb1;
+  opacity: 1;
+  position: relative;
+}
+
+.r1c1 i {
+  font-size: 150px;
+  color: #fff;
+  margin-top: 70px;
+}
+
+.main .r1c2 {
+  width: 33.3%;
+  float: left;
+  height: 300px;
+  background: #e9e9e9;
+  opacity: inherit;
+  position: relative;
+}
+
+.r1c2 img {
+  height: 300px;
+}
+
+.main .r1c3 {
+  width: 33.3%;
+  float: left;
+  height: 300px;
+  background: #000;
+  opacity: inherit;
+  position: relative;
+}
+
+.r1c3 img {
+  height: 60%;
+  margin-top: 70px;
+}
+
+.main .r2c1 {
+  width: 33.3%;
+  float: left;
+  height: 300px;
+  background: #dd2672;
+  opacity: inherit;
+  position: relative;
+}
+
+.r2c1 img {
+  height: 75%;
+  margin-top: 35px;
+}
+
+/* end of main */
