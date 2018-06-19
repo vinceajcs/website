@@ -1,0 +1,96 @@
+<html>
+
+<head>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+  <title>SpotiBox</title>
+
+  <!-- link to css -->
+  <link href="spotibox.css" type="text/css" rel="stylesheet" />
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  <!-- Google Analytics -->
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-88229608-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="home.html"><img id="vsh" src="logo.png" alt="logo"/></a>
+    </div>
+    <div class="links">
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a class="active" href="projects.html">Projects</a>
+      <a href="resume.pdf">Resume</a>
+    </div>
+  </header>
+
+  <div class="intro">
+    <div id="intro-text">
+      <h1>SpotiBox</h1>
+      <p><em>An iOS music player implemented with Swift</em></p>
+    </div>
+  </div>
+
+  <div class="main">
+    <h2>Demo</h2>
+
+    <video width="500px" height="500px" controls>
+        <source src="videos/spotiboxdemo.mov" type="video/mp4">
+    </video>
+
+    <h2>A little backstory</h2>
+    <p>This was my final project for my Intro to iOS/Swift Programming course. All acknowledgements, resources and the source code can be found <a href="https://github.com/vinceajcs/SpotiBox">here</a>.
+    </p>
+
+    <h2>About the process</h2>
+    <div class="process-description">
+      <p>Throughout the semester, we learned to leverage different APIs that could be then be used in our apps. Such examples include the Pokemon API to make a Pokedex, and the Google Maps API to locate and track favorite resturaunts. We were given free
+        rein as to what we wanted to create for our final project; since I pretty much use Spotify everyday, I decided to check out Spotify's Web API.
+      </p>
+
+
+      <p>One of the biggest challenges of this project was integrating the iOS Spotify SDK. This was needed in order to gain greater access to Spotify's Web API, as I needed a way to implement login authentication and audio streaming. I spent a good amount
+        of time searching for tutorials online - this was because while Spotify does have documentation on how to use their SDK and API, it primarily deals with older versions of Swift and Objective-C.
+      </p>
+
+      <p>Another aspect that took a while was trying to synchronize the slider and its value with the time of the song. As the song played, I had to make sure the slider's value was updating porportional to the duration of the entire song. Similarly, if
+        the slider was moved backwards or forwards, I had to make sure that the song would follow suit and start playing from the right time. I ended up accomplishing this, thanks in part to the use of a timer, though there is probably a better way to
+        do this.
+      </p>
+
+      <p>More features definitely could be added to this app. Most notably, the option to add favorite songs to a playlist. When I started this project, I thought about making an app that could allow people to add songs to a collaborative playlist when they
+        entered a party, started a road trip, or something similar. This way, everyone could get to listen to music that resonated with them. Then I realized, wait...you can pretty much already do this with Spotify.
+
+        <p>Nonetheless, I had a lot of fun making this app. I learned a little about creating music players.
+        </p>
+        <br/>
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>

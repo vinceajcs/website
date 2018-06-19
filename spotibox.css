@@ -35,11 +35,11 @@ header {
 }
 
 .active {
-  color: #333 !important;
+  color: black !important;
 }
 
 .intro {
-  background: #baddb1;
+  background: #dd2672;
   height: 500px;
   margin-top: -150px;
 }
@@ -54,24 +54,16 @@ header {
 .main {
   margin-top: 50px;
   margin-bottom: 50px;
-  font-family: 'Lato', sans-serif;
   text-align: center;
   color: #333;
 }
 
-.quotes {
-  margin-left: 250px;
-  margin-right: 250px;
-}
-
-.quotes a {
+.main a {
   text-decoration: none;
   color: #8fc0f3;
 }
 
-#rudy {
-  height: auto;
-  width: auto;
-  max-width: 500px;
-  max-height: 500px;
+.process-description {
+  margin-left: 100px;
+  margin-right: 100px;
 }
