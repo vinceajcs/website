@@ -1,12 +1,13 @@
 body {
   font-family: 'Lato', sans-serif;
+  margin: 0;
 }
 
 header {
   /* using flex to create 2 column layout (.logo + .links) */
   display: flex;
   /* remember padding vs margins */
-  margin-top: 30px;
+  margin-top: 25px;
   margin-left: 25px;
   margin-right: 25px;
 }
