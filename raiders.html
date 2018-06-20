@@ -1,0 +1,99 @@
+<html>
+
+<head>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+  <title>Space Raiders</title>
+
+  <!-- link to css -->
+  <link href="raiders.css" type="text/css" rel="stylesheet" />
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  <!-- Google Analytics -->
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-88229608-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="home.html"><img id="vsh" src="logo.png" alt="logo"/></a>
+    </div>
+    <div class="links">
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a class="active" href="projects.html">Projects</a>
+      <a href="resume.pdf">Resume</a>
+    </div>
+  </header>
+
+  <div class="intro">
+    <div id="intro-text">
+      <h1>Space Raiders</h1>
+      <p><em>An Android game made with Android Studio &amp; Java</em></p>
+    </div>
+  </div>
+
+  <div class="main">
+    <h2>How to Play: A Demo</h2>
+
+    <video width="500x" height="300px" controls>
+        <source src="videos/demo.mov" type="video/mp4">
+    </video>
+
+    <h2>A little backstory</h2>
+    <p>This was my final project for my Mobile Apps course in Android. No game engine was used.
+      <br/>Really, I couldn't have done it without Simplified Coding's Android Game Development Tutorial.
+      <br/>None of the icons in the game are made by me. I used Photoshop to create the different activity screens.</p>
+
+    <h2>About the game</h2>
+
+    <div class="game-description">
+      <p>A big part of the game involves <i>Graphics</i>, <i>MotionEvent</i> and touch gestures, as you press down on the screen to move the player up. By releasing your touch on the screen, the player goes down instead. The objective is to collide into
+        as many enemy ships as possible. If you let three of them go, it's over. I know that realistically the player would also die after crashing into so many ships - but hey, this is just a game, right? Let's just say the player's rocket is invincible.
+      </p>
+
+
+      <p>The audio that goes with the game is thanks to <em>MediaPlayer</em> and <em>Services</em>. It's really important to note that I <b>do not</b> own the music and sound effects used in the game. Yes, the main soundtrack is from Interstellar (to go
+        with the space theme), and the audio that plays when the game is over is from Nintendo.
+      </p>
+
+      <p>Believe it or not, one of the hardest parts of making this game was trying to find a short enough clip for the explosion, so that it wasn't still going when the player hit another ship. Otherwise, the explosion could be both ending and starting
+        at once, which would be pretty confusing for the player. The explosion sound effect that I ended up using is less than a second long.
+      </p>
+
+      <p>There is one main thread that basically updates the coordinates of the many objects in this game, specifically the rockets and the "stars" in the background. The objects are then drawn, and then updated again. Two enemy ships are generated each
+        cycle. You get 100 points for every enemy you hit, and points are also gained just by staying alive.
+
+        <p><em>SQLite</em> is used to store and sort the high scores, so that only the top five scores are displayed at any given time.
+        </p>
+
+        <p>The source code can be found <a href="https://github.com/vinceajcs/SpaceRaiders">here</a>.</p>
+        <br/>
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>
